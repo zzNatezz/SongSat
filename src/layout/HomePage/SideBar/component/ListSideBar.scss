@@ -1,0 +1,32 @@
+@use 'src/varSCSS/variables' as v;
+
+@mixin flexAndCenterTextW10G{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.sidebar-subHeader{
+    margin-top: 30px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    color: v.$gray_light;
+}
+.subHeader-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+    color: v.$purple;
+    .subHeader-list{
+        @include flexAndCenterTextW10G();
+        row-gap: 20px;
+        .subHeader-icon{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

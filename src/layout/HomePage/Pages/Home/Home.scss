@@ -1,0 +1,119 @@
+@use 'src/varSCSS/variables' as v;
+
+.home-container{
+    padding:  20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 70%;
+    .home-header{
+        display: flex;
+        justify-content: space-between;
+        .home-link-container{
+            display: flex;
+            column-gap: 10px;
+            .link-target{
+                color: v.$link_color;
+            }
+        }
+        .home-avatar{
+            display: flex;
+            column-gap: 20px;
+            align-items: center;
+            .user-container{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                .user-name{
+                    color: v.$username_color;
+                }
+                .user-class{
+                    color: v.$class_color;
+                    font-size: 22px;
+                    -webkit-animation: flash linear 1s infinite;
+                    animation: flash linear 2.5s infinite;
+                    @-webkit-keyframes flash {
+                        0% { opacity: 1; } 
+                        50% { opacity: .1; } 
+                        100% { opacity: 1; }
+                    };
+                    @keyframes flash {
+                        0% { opacity: 1; } 
+                        50% { opacity: .1; } 
+                        100% { opacity: 1; }
+                    };
+                }
+            }
+        }
+    }
+    .home-body{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: v.$white;
+        padding: 20px 20px 0;
+        border-radius: 20px;
+        .body-top{
+            display: flex;
+            justify-content: space-between;
+            .body-left{
+                color: v.$purple;
+            }
+            .body-right{
+                display: flex;
+                column-gap: 15px;
+                .img2{
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+        .body-bottom{
+            display: flex;
+            gap:30px;
+            overflow: auto;
+            padding-bottom: 15px;
+            .body-album-container{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap:5px;
+                border: 1px solid v.$gray_light;
+                border-radius: 20px;
+                padding : 10px;
+                width: 300px;
+                text-align: left;
+                .body-album-img{
+                    width: 125px;
+                    height: 125px;
+                    border-radius: 20px;
+                    border: 1px solid v.$primary_color;
+                    box-shadow: 3px -2px 10px v.$gray;
+                    background-color: v.$primary_color;
+                }
+                .body-album-des{
+                    font-size: 18px;
+                    color: v.$purple;
+                    font-weight: bolder;
+                }
+                .body-album-class{
+                    font-size: 15px;
+                    color: v.$gray_light;
+                    font-weight: lighter;
+                }
+                .body-album-playbutton{
+                    position: absolute;
+                    margin: auto;
+                    top: 14%;
+                }
+
+            }
+        }
+        .body-bottom::-webkit-scrollbar{
+            height: 7px;
+        }
+        .body-bottom::-webkit-scrollbar-thumb{
+            background-color: v.$gray;
+            border-radius: 20px;
+        }
+    }
+}

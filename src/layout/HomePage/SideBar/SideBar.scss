@@ -1,0 +1,56 @@
+@use 'src/varSCSS/variables' as v;
+
+@mixin flexAndCenterTextW10G{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.sideBar-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 2vh;
+    row-gap: 20px;
+    background-color: v.$white;  
+    width: 20%;
+    height: 960px;
+    justify-content: space-between;
+
+    .sidebar-header{
+        font-size: larger;
+        font-weight: 800;
+        color: v.$purple;
+        @include flexAndCenterTextW10G();
+    }
+
+    .sideBar-bottom{
+        margin-top: 45px;
+         display: flex;
+         flex-direction: column;
+         row-gap: 10px;
+        .bottom-header{
+            color: v.$gray_light;
+        }
+        .bottom-picture{
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            .picture{
+                width: 115px;
+            }
+        }
+        .bottom-copyright{
+            color: v.$gray_light;
+        }
+        .bottom-language{
+            display: flex;
+            gap : 10px;
+            .bottom-language-title{
+                color: v.$blue;
+            }
+        }
+    }
+}

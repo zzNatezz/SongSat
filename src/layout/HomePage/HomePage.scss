@@ -1,0 +1,11 @@
+@use 'src/varSCSS/variables' as v;
+
+.homePage-container{
+    width: 1440px;
+    height: 960px;
+    background-color: v.$primary_color;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 5%;
+}

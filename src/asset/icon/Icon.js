@@ -1,0 +1,27 @@
+const Icon = {
+    audio_square : require('./icon_svg/audio-square.svg').default,
+    back : require('./icon_svg/Back.svg').default,
+    comment : require('./icon_svg/Comment.svg').default,
+    discount : require('./icon_svg//Discount.svg').default,
+    fast_forward : require('./icon_svg//Fast Forward.svg').default,
+    favourite : require('./icon_svg/Favourite.svg').default,
+    heart : require('./icon_svg/Heart.svg').default,
+    home : require('./icon_svg/home.svg').default,
+    logout : require('./icon_svg/Logout.svg').default,
+    mask_group : require('./icon_svg/Mask group.svg').default,
+    next : require('./icon_svg/Next.svg').default,
+    path : require('./icon_svg/Path.svg').default,
+    play_button : require('./icon_svg//Play Button.svg').default,
+    play : require('./icon_svg/Play.svg').default,
+    previous : require('./icon_svg/Previous.svg').default,
+    profile : require('./icon_svg/Profile.svg').default,
+    search : require('./icon_svg/Search.svg').default,
+    setting : require('./icon_svg/Setting.svg').default,
+    video : require('./icon_svg/Video.svg').default,
+    albums : require('./icon_svg/albums.svg').default,
+    arrow_right : require('./icon_svg/arrow-right.svg').default,
+    arrow_down2 : require('./icon_svg/Arrow - Down 2.svg').default,
+    arrow_down2Light : require('./icon_svg/Arrow - Down 2 lighColor.svg').default,
+};
+
+export default Icon;
