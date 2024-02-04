@@ -32,3 +32,26 @@ export const ChartList  = [
         link : 'tbc'
     },
 ]
+
+export const listHistoryMusic = [
+    {
+        img : Picture.sheWillLoved,
+        des : 'She Will Be Loved',
+        author : 'Maroon5'
+    },
+    {
+        img : Picture.dumpLittlePug,
+        des : 'Dumb Little Bug',
+        author : 'Em Beihold'
+    },
+    {
+        img : Picture.itWouldBeU,
+        des : 'It Would Be You',
+        author : 'Ben Hector'
+    },
+    {
+        img : Picture.kissMeMore,
+        des : 'Kiss Me More',
+        author : 'Doja Cat'
+    },
+]

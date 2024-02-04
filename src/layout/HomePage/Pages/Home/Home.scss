@@ -1,6 +1,7 @@
 @use 'src/varSCSS/variables' as v;
 
 .home-container{
+    color: v.$purple;
     padding:  20px;
     display: flex;
     flex-direction: column;
@@ -114,6 +115,76 @@
         .body-bottom::-webkit-scrollbar-thumb{
             background-color: v.$gray;
             border-radius: 20px;
+        }
+    }
+    .home-bottom-container{
+        display: flex;
+        justify-content: space-between;
+        .bottom-listeningHistory{
+            display: flex;
+            flex-direction: column;
+            width: 750px;
+            background-color: v.$white_reduce;
+            border-radius: 20px;
+            row-gap: 20px;
+            .history-header{
+                display: flex;
+                justify-content: space-between;
+                background-color: v.$white;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                padding: 20px 20px 40px;
+                height: 40px;
+                .seeall{
+                    color: v.$gray_light;
+                    font-size: 20px;
+                    font-weight: lighter;
+                }
+            }
+            .list-history-music{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                padding: 20px;
+                overflow:auto;
+                height: 320px;
+                .main-container{
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: v.$white;
+                    border-radius: 20px;
+                    .sub-container{
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        text-align: left;
+                        .music-img{
+                            width: 85px;
+                            height: 85px;
+                            border-radius: 20px;
+                            box-shadow: 3px -2px 10px v.$gray;
+                        }
+                        .music-infor{
+                            display: flex;
+                            flex-direction: column;
+                            gap:5px;
+                            .music-name{
+                                font-size: 18px;
+                            }
+                            .music-artis{
+                                font-size: 15px;
+                                color: v.$gray_light;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .bottom-listeningMusic{
+            display: flex;
+            flex-direction: column;
+            width: 280px;
         }
     }
 }

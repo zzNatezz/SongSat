@@ -11,6 +11,8 @@ const Picture ={
     RBsould : require('./picture-png/R&Bsoul.png'),
     rock : require('./picture-png/rock.png'),
     sheWillLoved : require('./picture-png/ShewillLoved.png'),
+    itWouldBeU : require('./picture-png/ItWouldBeYou.png'),
+    kissMeMore : require('./picture-png/KissMeMore.png'),
 }
 
 export default Picture
